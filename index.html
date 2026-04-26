@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Orbs -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">PORTFOLIO</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Hero Section (Home) -->
+        <section class="hero" id="home">
+            <div class="hero-inner">
+                <div class="hero-badge">🚀 Available for Work</div>
+                <h1>
+                    Hi, I'm <span class="gradient-text">Prasad Gurung</span>
+                </h1>
+                <div class="typing-wrapper">
+                    <span class="typing-text" id="typingText"></span>
+                </div>
+                <p>
+                    A passionate full-stack developer crafting beautiful, performant, and user-centric digital experiences. Turning complex ideas into elegant solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch →</a>
+                </div>
+            </div>
+            <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="section-header" data-animate>
+                <h2>About <span>Me</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-grid">
+                    <div class="about-image-wrapper" data-animate>
+  <div class="about-image" style="background-image: url('images/me.png');"></div>
+</div>
+                </div>
+                <div class="about-text" data-animate>
+                    <h3>Crafting Digital Magic</h3>
+                    <p>
+                        Want to build experience in web development, I specialize in building scalable applications using modern technologies. I love clean code, great design, and creating things that make a difference.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new tech, contributing to open-source projects, or enjoying a good cup of coffee. ☕
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="section-header" data-animate>
+                <h2>My <span>Skills</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-animate style="--fill: 92%;">
+                    <span class="skill-icon">⚛️</span>
+                    <h4>React & Next.js</h4>
+                    <p>Building high-performance SPAs and SSR applications.</p>
+                    <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-card" data-animate style="--fill: 88%;">
+                    <span class="skill-icon">🎨</span>
+                    <h4>UI/UX Design</h4>
+                    <p>Creating intuitive and beautiful user interfaces.</p>
+                    <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-card" data-animate style="--fill: 85%;">
+                    <span class="skill-icon">🐍</span>
+                    <h4>Python & Django</h4>
+                    <p>Robust back-end systems and API development.</p>
+                    <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-card" data-animate style="--fill: 90%;">
+                    <span class="skill-icon">☁️</span>
+                    <h4>Cloud & DevOps</h4>
+                    <p>AWS, Docker, CI/CD pipelines & infrastructure.</p>
+                    <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-card" data-animate style="--fill: 80%;">
+                    <span class="skill-icon">📱</span>
+                    <h4>Mobile Development</h4>
+                    <p>Cross-platform apps with React Native & Flutter.</p>
+                    <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+                </div>
+                <div class="skill-card" data-animate style="--fill: 94%;">
+                    <span class="skill-icon">🗄️</span>
+                    <h4>Database Design</h4>
+                    <p>SQL, NoSQL, and data architecture patterns.</p>
+                    <div class="skill-bar"><div class="skill-bar-fill"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="section-header" data-animate>
+                <h2>Featured <span>Projects</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-animate>
+                    <div class="project-image">
+                        🛒
+                        <div class="project-image-overlay">
+                            <div class="icon-circle">🔗</div>
+                            <div class="icon-circle">👁️</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>E-Commerce Platform</h4>
+                        <p>A full-featured online store with real-time inventory and payment processing.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate>
+                    <div class="project-image">
+                        📊
+                        <div class="project-image-overlay">
+                            <div class="icon-circle">🔗</div>
+                            <div class="icon-circle">👁️</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>Analytics Dashboard</h4>
+                        <p>Interactive data visualization dashboard with real-time streaming updates.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-animate>
+                    <div class="project-image">
+                        🤖
+                        <div class="project-image-overlay">
+                            <div class="icon-circle">🔗</div>
+                            <div class="icon-circle">👁️</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4>AI Chat Assistant</h4>
+                        <p>Intelligent chatbot powered by machine learning for customer support automation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="section-header" data-animate>
+                <h2>Get In <span>Touch</span></h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-card" data-animate>
+                <h3>Let's Build Something Amazing</h3>
+                <p style="color: var(--text-muted); margin-bottom: 8px;">
+                    Have a project in mind? I'd love to hear about it.
+                </p>
+                <a href="mailto:prasaddadda23@gmail.com" class="email-link">prasadgurung@gmail.com</a>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">🐙</a>
+                    <a href="#" class="social-link" title="LinkedIn">💼</a>
+                    <a href="#" class="social-link" title="Twitter">🐦</a>
+                    <a href="#" class="social-link" title="Dribbble">🏀</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Prasad Gurung. Crafted with 💜 and lots of ☕</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
